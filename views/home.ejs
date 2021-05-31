@@ -1,0 +1,9 @@
+<%- include("./partials/header") %>
+<h1>welcome to our blog </h1>
+<p><%=homeContent %> </p>
+<%postarr.forEach(element => {%>
+    <h2><%=element.name%></h2>
+    <p><%=element.Content%></p>
+<%});%>
+
+<%- include("./partials/footer") %> 

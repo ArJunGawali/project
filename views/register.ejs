@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>my blog</title>
+        <!-- CSS only -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    </head>
+    <body class="text-center">
+        
+   
+    <form action="/register" method="POST">
+    <main class="form-signin">
+        <form>
+        <h1 class="h3 mb-3 fw-normal" style="text-align: center;">Please register yourself</h1>
+      
+          <div class="form-floating">
+            <input type="text" class="form-control" name="user" placeholder="Ex-vaasu" required autocomplete="off">
+                    
+          </div>
+          <div class="form-floating" >
+            <input type="number" name="scholar_no" maxlength="9" max="9" min="9" class="form-control" placeholder="schlolar no Ex-181117014" required autocomplete="off">
+          </div>
+          <div class="form-floating">
+            <input type="email" class="form-control" name="email" placeholder="12@gmail.com" required autocomplete="off">        
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" name="password" required autocomplete="off">       
+          </div>
+          <div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+          <p class="mt-5 mb-3 text-muted">have a account?<a href="/signin">sign-in</a></p>
+   
+        </div>
+        </form>
+          <!-- <input type="text" name="user">
+          <input type="number" name="scholar">
+          <button type="submit" name="button"class="btn btn-secondary">signin</button>
+      -->
+</form>
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+<%- include("./partials/header") %>
+<form action="/friends" method="POST">
+    <div class="mb-3 ">
+        <label  class="form-label">Name of your friend</label>
+        <input type="text" name="frname">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">tell them about your feeling</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="10" name="describe"></textarea>
+      </div>
+
+
+<button type="submit" name="button" class="btn bg-primary mb-6">submit</button>
+</form>
+<%- include("./partials/footer") %> 

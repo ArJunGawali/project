@@ -119,6 +119,17 @@ app.post("/friends", function (req, res) {
     }
   });
 });
+
+app.get("/friend", (req, res) => {
+  User.find({}, (err, users) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(users);
+      res.render("friend", { users: users });
+    }
+  });
+});
 // app.get("/logout",function(res,req){
 //     res.redirect("/");
 // })

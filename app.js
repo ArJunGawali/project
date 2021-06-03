@@ -75,13 +75,19 @@ app.post("/signin", function (req, res) {
     } else {
       if (foundUser) {
         if (foundUser.userScholar === loginScholar) {
-          res.render("main");
+          res.redirect("/main?user=" + foundUser.userName);
         }
       } else {
         res.render("nouser");
       }
     }
   });
+});
+
+app.get("/main", (req, res) => {
+  const user = req.query.user;
+  console.log(user);
+  res.render("main", { username: user });
 });
 
 app.get("/home", function (req, res) {

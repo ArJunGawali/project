@@ -2,6 +2,8 @@
 <h1>Your Friends</h1>
 
 <%users.forEach(element => {%>
-<h2><%=element.userName%></h2>
-<p><%=element.userScholar%></p>
+
+<li><%=element.userName%></li>
+<!-- <p><%=element.userScholar%></p> -->
+
 <%});%> <%- include("./partials/footer") %>

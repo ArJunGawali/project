@@ -1,19 +1,18 @@
-body{
-    background-color: #E4E9FD;
- /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%); */
-    min-height: 1000px;
-  }
-.space{
-    padding: 15px;
+body {
+  background-color: #e4e9fd;
+  /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%); */
+  min-height: 1000px;
 }
-p{
-    font-family: "Montserrat";
+.space {
+  padding: 15px;
 }
-h1{
-    font-family: "Lora";
+p {
+  font-family: "Montserrat";
+}
+h1 {
+  font-family: "Lora";
 }
 textarea {
-    width: 190px;
-    height: 150px;
-  }
-  
+  width: 190px;
+  height: 150px;
+}
